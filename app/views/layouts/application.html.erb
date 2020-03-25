@@ -8,8 +8,35 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body>
+    <header class="row">
+      <div class="col-3">
+        <div class="circle">
+          <br />
+        Great!
+        <br />
+        Sweet!
+        <br />
+        Fantastic!!
+      </div>
+    </div>
+    <div class="col-4 slogan">
+      Splurting out unsolicited advice about entrepreneurship since '98
+    </div>
+    <div class="col-5 links">
+      <%= link_to 'Contribute', '#' %>
+      <%= link_to 'About', '#' %>
+    </div>
+  </header>
+
+
+<hr />
+  <br class="clear" />
+
+<%= yield %>
+
+</body>
+</html>
     <%= yield %>
   </body>
 </html>
